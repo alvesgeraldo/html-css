@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando imagens dinâmicas</title>
+</head>
+<body>
+    <h1>Testando imagens dinâmicas</h1>
+    <p>Vamos testar a carga de imagens para tamanhos de telas diferentes</p>
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/300.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/700.png" type="image/png">
+        <img src="imagens/1200.png" alt="Foto de paisagem padrão">
+    </picture>
+    <h1>Testando áudios em HTML5</h1>
+    <audio preload="metadata" controls autoplay>
+        <source src="audio/cantico2.mp3" type="audio/mpeg">    
+    </audio>
+    <p>Para baixar esse áudio <a href="audio/cantico2.mp3" download="cantico2.mp3" type="audio/mp3">Clique aqui</a></p>
+</body>
+</html>
